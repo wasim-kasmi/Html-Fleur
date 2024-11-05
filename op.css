@@ -1,0 +1,54 @@
+#ligne nav{
+    display: flex;
+    padding: 80px;
+    justify-content:center;
+    justify-content:space-between;
+    background-color: rgb(72, 22, 46);
+    font-size: 20px;
+}
+body{
+    background-color: rgb(248, 152, 152);
+}
+.draco{ 
+    text-align: center;
+    background-color: rgb(151, 100, 33);
+} 
+
+.battle{
+    background-color: rgb(175, 127, 220);
+}
+
+.blaster{
+    background-color: rgb(117, 117, 185);
+}
+
+div .colossus, .arca{ 
+    display: flex;
+    justify-content: space-between;
+    }
+
+
+.poudre{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row; 
+}
+
+.colossus{
+background-color: rgb(165, 230, 230);
+}
+
+.hyper{
+    background-color: rgb(202, 52, 52);
+}
+.firefist{
+    background-color: blue;
+}
+
+.dracofeu{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    border-radius: 0%;
+    border-color: rgb(14, 15, 15);
+}

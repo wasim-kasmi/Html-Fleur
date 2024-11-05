@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <style type="text/css">
+       
+       body {
+    padding-left: 11em;
+    font-family: Georgia, "Times New Roman",
+          Times, serif;
+    color: purple;
+    background-color: #d8da3d }
+  ul.navbar {
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
+  h1 {
+    font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif }
+       
+       body {
+         
+    
+          color: rgb(15, 15, 15);
+          background-color: #5b6061 }
+        h1 {
+          font-family: Helvetica, Geneva, Arial,
+                SunSans-Regular, sans-serif }
+        </style>
+      </head>
+      
+</head>
+<body>
+    
+ 
+</body>
+</html>
+
+    
+<h1>Mon CV</h1>
+ <h2><title>CV</title> </h2>
+<!--h1 permet de mettre un titre-->
+<h2 id="darkshadow">informations personelles:</h2>
+<p>kasmi wasim </p>
+<p>24 ans</p>
+<p>né à Marseille</p>
+
+<!--h2 permet un autre sous titre-->
+<h2 id="chapeau"> Objectif professionnelle:</h2>
+<p>Trouver un travaille dans la cybersécurité</p>
+<!--p permet de mettre du texte-->
+<h2 id="triangle">Experience professionelle:</h2>
+<p>Animateur enfant des 10-12 ans au centre aéré La Maurelle. Aout 2018-2019</p>
+<p>interimaire en tant que cantonnier chez Bronzo de 2022 a 2023</p>
+
+<h2 id="loukman">Etudes/formations:</h2>
+<p> BAC STMG spécialité Marketing au lycée Honoré Daumier de 2017-2019</p>
+<p> 4 ans de licence à la Fac d'Aix-Marseille de 2019 a 2023</p>
+ 
+<h2 id=voiture> Mes compétences:</h2>
+<p>Python: Débutant</p> <img src="./img/python-logo.png" alt="Python" width="70" height="70">
+<p>Pix:</p> <img src="./img/pix.jpg" alt="Pix" width='50' height='50'> 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon CV</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div id="cv">
+        
+        <p>Voici le contenu de mon CV...</p>
+    </div>
+    <button id="download">Télécharger en PDF</button>
+
+    <script>
+        document.getElementById('download').addEventListener('click', function () {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            doc.text(document.getElementById('cv').innerText, 10, 10);
+            doc.save('mon_cv.pdf');
+        });
+    </script>
+    <footer> 
+        <a href="https://github.com/wasim-kasmi" target="github"> Consulter mon github</a>
+    </footer>
+</body>
+</html>
